@@ -26,32 +26,7 @@
     <div id="resultContainer"></div>
 </div>
 
-<script>
-    function sumValues() {
-    // Obtener los valores de los campos
-        var location1 = parseInt(document.getElementById('location1').value);
-        var location2 = parseInt(document.getElementById('location2').value);
-        var weight = parseInt(document.getElementById('weight').value);
-        var size = parseInt(document.getElementById('size').value);
-        var type = document.getElementById('type').value;
 
-        // Calcular la suma de los valores
-        var total = location1 + location2 + weight + size;
-
-     // Mostrar el resultado en el contenedor inferior
-        var resultContainer = document.getElementById('resultContainer');
-        resultContainer.innerHTML = `
-            <h3>Resultado</h3>
-            <p><strong>Location 1:</strong> ${location1}</p>
-            <p><strong>Location 2:</strong> ${location2}</p>
-            <p><strong>Weight:</strong> ${weight}</p>
-            <p><strong>Size:</strong> ${size}</p>
-            <p><strong>Type:</strong> ${type}</p>
-            <p><strong>Total:</strong> ${total}</p>
-        `;
-}
-
-</script>
 <style>
     .container {
     max-width: 400px;
